@@ -1,0 +1,21 @@
+    <mat-card>
+  <mat-card-title>Nova Requisição</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Email"
+          [(ngModel)]="payment.nome" name="nome">
+  </mat-form-field>
+      
+    <mat-form-field>
+        <input matInput placeholder="Código Do Produto"
+            [(ngModel)]="payment.codigo" name="codigo">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createPayment()" >
+      Solicitar
+  </button>
+  
+  <button mat-raised-button (click)="cancel()">
+      Cancelar
+  </button>
+</mat-card>
